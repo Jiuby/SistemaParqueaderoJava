@@ -37,7 +37,7 @@ public class Main {
             System.out.println("2. Crear un nuevo parqueadero");
             System.out.print("Seleccione una opcion: ");
             int opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
+            scanner.nextLine(); 
 
             if (opcion == 1) {
                 parqueadero = cargarParqueaderoExistente(scanner);
@@ -66,7 +66,7 @@ public class Main {
             mostrarMenu();
             System.out.print("Seleccione una opcion: ");
             int opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
+            scanner.nextLine(); 
 
             switch (opcion) {
                 case 1:
@@ -137,7 +137,7 @@ public class Main {
 
         System.out.print("Seleccione un parqueadero (numero): ");
         int seleccion = scanner.nextInt();
-        scanner.nextLine(); // Limpiar buffer
+        scanner.nextLine(); 
 
         if (seleccion < 1 || seleccion > nombres.size()) {
             System.out.println("Seleccion invalida.");
@@ -168,7 +168,7 @@ public class Main {
 
         System.out.print("Ingrese la capacidad total de espacios: ");
         int capacidad = scanner.nextInt();
-        scanner.nextLine(); // Limpiar buffer
+        scanner.nextLine(); 
 
         Parqueadero parqueadero = new Parqueadero(nombreParqueadero, capacidad);
 
